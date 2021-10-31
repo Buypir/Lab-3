@@ -20,7 +20,8 @@ int main()
 	sent[nospace] = '\0';
 
 	printf("\nNo space = %s\t %d\t", sent, strlen(sent));
-	char temp;
+	
+	char temp;   //variable for sentence reverse
 	for (int i = 0, k = strlen(sent); i < k / 2; i++) {
 		temp = sent[i];
 		sent[i] = sent[k - i - 1];
